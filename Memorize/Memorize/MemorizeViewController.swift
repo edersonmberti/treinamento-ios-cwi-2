@@ -32,31 +32,20 @@ class MemorizeViewController: UIViewController {
     
     private func newGame() {
         memoryGame = MemoryGame<String>(of: classImages)
+        setupLayout()
         updateUI()
     }
     
     private func updateUI() {
-        // TODO : Refact
-        
         for index in cardButtons.indices {
-            var image: UIImage?
-            let button = cardButtons[index]
             let card = memoryGame.cards[index]
-            let view = cardViews[index]
             
             if card.isFaceUp {
-                image = UIImage(named: card.content)
-                button.setImage(image, for: .normal)
-                button.isHidden = false
-                view.layer.shadowColor = UIColor.black.cgColor
+                flipOver(at: index)
             } else if card.isMatched {
-                view.layer.shadowColor = UIColor.clear.cgColor
-                button.isHidden = true
+                matchCard(at: index)
             } else {
-                image = UIImage(named: "card-default")
-                button.setImage(image, for: .normal)
-                button.isHidden = false
-                view.layer.shadowColor = UIColor.black.cgColor
+                flipDown(at: index)
             }
         }
         
@@ -85,6 +74,34 @@ class MemorizeViewController: UIViewController {
             card.layer.shadowOpacity = 0.3
             card.layer.cornerRadius = 8
         }
+        
+        cardButtons.forEach { button in
+            button.isHidden = false
+        }
+    }
+}
+
+extension MemorizeViewController {
+    
+    func flipOver(at index: Int) {
+        let button = cardButtons[index]
+        let card = memoryGame.cards[index]
+
+        button.setImage(UIImage(named: card.content), for: .normal)
+    }
+    
+    func matchCard(at index: Int) {
+        let view = cardViews[index]
+        let button = cardButtons[index]
+        
+        view.layer.shadowColor = UIColor.clear.cgColor
+        button.isHidden = true
+    }
+    
+    func flipDown(at index: Int) {
+        let button = cardButtons[index]
+
+        button.setImage(UIImage(named: "card-default"), for: .normal)
     }
 }
 
