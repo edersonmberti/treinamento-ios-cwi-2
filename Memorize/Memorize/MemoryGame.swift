@@ -20,7 +20,7 @@ class MemoryGame<T> {
         
         let cardsFaceUp = cards.filter { $0.isFaceUp }
                 
-        if index == indexOfFaceUpCard { return }
+        if index == indexOfFaceUpCard || cards[index].isFaceUp { return }
         
         if cardsFaceUp.isEmpty {
             cards[index].isFaceUp = true
@@ -30,7 +30,6 @@ class MemoryGame<T> {
                 cards[index].isFaceUp = true
                 cards[index].isMatched = true
                 cards[indexOfFaceUpCard!].isMatched = true
-                indexOfFaceUpCard = nil
             } else {
                 cards[index].isFaceUp = true
                 indexOfFaceUpCard = index
