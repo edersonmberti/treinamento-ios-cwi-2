@@ -13,7 +13,6 @@ class MemorizeViewController: UIViewController {
     
     @IBOutlet var cardViews: [UIView]!
     @IBOutlet var cardButtons: [UIButton]!
-    @IBOutlet weak var restartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +21,7 @@ class MemorizeViewController: UIViewController {
     }
     
     @IBAction func cardPressed(_ sender: UIButton) {
-        let buttonIndex = cardButtons.firstIndex(of: sender)!
-        memoryGame.chooseCard(at: buttonIndex)
+        memoryGame.chooseCard(at: cardButtons.firstIndex(of: sender)!)
         
         updateUI()
     }
@@ -38,6 +36,8 @@ class MemorizeViewController: UIViewController {
     }
     
     private func updateUI() {
+        // TODO : Refact
+        
         for index in cardButtons.indices {
             var image: UIImage?
             let button = cardButtons[index]
@@ -78,8 +78,6 @@ class MemorizeViewController: UIViewController {
     }
     
     private func setupLayout() {
-        restartButton.semanticContentAttribute = .forceRightToLeft
-        
         cardViews.forEach { card in
             card.layer.shadowColor = UIColor.black.cgColor
             card.layer.shadowOffset = .zero

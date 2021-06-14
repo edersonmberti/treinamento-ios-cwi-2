@@ -8,8 +8,8 @@
 import Foundation
 
 struct Card<T> {
+    let identifier: Int
     var isFaceUp = false
     var isMatched = false
     var content: T
-    let identifier: Int
 }

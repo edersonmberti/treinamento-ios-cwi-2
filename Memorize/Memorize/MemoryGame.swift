@@ -16,6 +16,8 @@ class MemoryGame<T> {
     private var indexOfFaceUpCard: Int?
     
     func chooseCard(at index: Int) {
+        // TODO: Refact
+        
         let cardsFaceUp = cards.filter { $0.isFaceUp }
                 
         if index == indexOfFaceUpCard { return }
@@ -28,7 +30,6 @@ class MemoryGame<T> {
                 cards[index].isFaceUp = true
                 cards[index].isMatched = true
                 cards[indexOfFaceUpCard!].isMatched = true
-                
                 indexOfFaceUpCard = nil
             } else {
                 cards[index].isFaceUp = true
@@ -49,11 +50,11 @@ class MemoryGame<T> {
     
     init(of contents: [T]) {
         for index in contents.indices {
-            let card = Card<T>(content: contents[index], identifier: index)
+            let card = Card<T>(identifier: index, content: contents[index])
     
             cards.append(contentsOf: [card, card])
         }
         
-//        cards.shuffle()
+        cards.shuffle()
     }
 }
