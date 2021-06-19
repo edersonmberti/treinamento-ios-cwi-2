@@ -16,41 +16,38 @@ class MemoryGame<T> {
     private var indexOfFaceUpCard: Int?
     
     func chooseCard(at index: Int) {
-        // TODO: Refact
+        guard !cards[index].isFaceUp else { return }
         
-        let cardsFaceUp = cards.filter { $0.isFaceUp }
-                
-        if index == indexOfFaceUpCard || cards[index].isFaceUp { return }
-        
-        if cardsFaceUp.isEmpty {
-            cards[index].isFaceUp = true
+        if indexOfFaceUpCard == nil {
+            flipDownAllCards(except: index)
             indexOfFaceUpCard = index
-        } else if cardsFaceUp.count == 1 {
-            if cards[index].identifier == cardsFaceUp.first!.identifier {
-                cards[index].isFaceUp = true
-                cards[index].isMatched = true
-                cards[indexOfFaceUpCard!].isMatched = true
-            } else {
-                cards[index].isFaceUp = true
-                indexOfFaceUpCard = index
-            }
-            
-            attempts += 1
         } else {
-            for i in cards.indices {
-                cards[i].isFaceUp = i == index
-            }
+            let itsAMatch = cards[index] == cards[indexOfFaceUpCard!]
             
-            indexOfFaceUpCard = index
+            cards[indexOfFaceUpCard!].isMatched = itsAMatch
+            cards[index].isMatched = itsAMatch
+            cards[index].isFaceUp = true
+            indexOfFaceUpCard = nil
+            attempts += 1
         }
         
-        finish = cards.filter { !$0.isMatched }.isEmpty
+        finish = allCardsMatched()
+    }
+    
+    private func flipDownAllCards(except index: Int) {
+        for cardIndex in cards.indices {
+            cards[cardIndex].isFaceUp = cardIndex == index
+        }
+    }
+    
+    private func allCardsMatched() -> Bool {
+        cards.filter { !$0.isMatched }.isEmpty
     }
     
     init(of contents: [T]) {
         for index in contents.indices {
             let card = Card<T>(identifier: index, content: contents[index])
-    
+            
             cards.append(contentsOf: [card, card])
         }
         
