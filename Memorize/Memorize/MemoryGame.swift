@@ -16,7 +16,7 @@ class MemoryGame<T> {
     private var indexOfFaceUpCard: Int?
     
     func chooseCard(at index: Int) {
-        guard !cards[index].isFaceUp else { return }
+        guard !cards[index].isFaceUp, cards.indices.contains(index) else { return }
         
         if indexOfFaceUpCard == nil {
             flipDownAllCards(except: index)
