@@ -35,11 +35,11 @@ struct SearchAPIURLProvider: URLProvider {
 
         url.appendPathComponent("search")
         url.appendPathComponent("repositories")
-
+        
         endpoint.query.forEach { name, value in
             url.append(name, value: value)
         }
-
+        
         return url
     }
 

@@ -53,3 +53,17 @@ extension User {
         return try? JSONDecoder().decode(User.self, from: json)
     }
 }
+
+extension Issue {
+    static var mocked: Issue {
+        Issue(comments: 1,
+              created: .init(timeIntervalSinceReferenceDate: 0),
+              creator: Creator(login: "ahoppen"),
+              description: "Resolves rdar://78011350",
+              id: 10,
+              number: 100,
+              state: Issue.State.open,
+              title: "[Async Refactoring] Get semantics providing expr to decide if call is to completion handler",
+              url: "https://github.com/apple/swift/pull/38261")
+    }
+}

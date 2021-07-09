@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		E42B313B2690CA2400609459 /* CombineRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B313A2690CA2400609459 /* CombineRequester.swift */; };
 		E42B313D2690DC7D00609459 /* LanguagesIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E42B313C2690DC7D00609459 /* LanguagesIndicator.swift */; };
+		E44FF23226935C0300327252 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FF23126935C0300327252 /* Issue.swift */; };
+		E44FF23526935F8800327252 /* IssueListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FF23426935F8800327252 /* IssueListViewModel.swift */; };
+		E44FF23726935F9600327252 /* IssueListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FF23626935F9600327252 /* IssueListView.swift */; };
+		E44FF2392693621C00327252 /* IssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E44FF2382693621C00327252 /* IssueView.swift */; };
 		E49915BF268DEFCF005544A2 /* SwiftHubAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49915BE268DEFCF005544A2 /* SwiftHubAppApp.swift */; };
 		E49915C3268DEFD1005544A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49915C2268DEFD1005544A2 /* Assets.xcassets */; };
 		E49915C6268DEFD1005544A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49915C5268DEFD1005544A2 /* Preview Assets.xcassets */; };
@@ -32,6 +36,7 @@
 		E4991610268E9ED4005544A2 /* LanguagePillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E499160F268E9ED4005544A2 /* LanguagePillView.swift */; };
 		E4991613268F512A005544A2 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4991612268F512A005544A2 /* UserDetailView.swift */; };
 		E4991615268F5136005544A2 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4991614268F5136005544A2 /* UserDetailViewModel.swift */; };
+		E4F3853A2698A9FA00E13C27 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F385392698A9FA00E13C27 /* WebView.swift */; };
 		E4F567D4268FD5EF002FEC6E /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F567D3268FD5EF002FEC6E /* RoundedImage.swift */; };
 		E4F567D626908A04002FEC6E /* TextLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F567D526908A04002FEC6E /* TextLinkView.swift */; };
 		E4F567D826908B94002FEC6E /* NumericInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F567D726908B94002FEC6E /* NumericInfoView.swift */; };
@@ -62,6 +67,10 @@
 /* Begin PBXFileReference section */
 		E42B313A2690CA2400609459 /* CombineRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineRequester.swift; sourceTree = "<group>"; };
 		E42B313C2690DC7D00609459 /* LanguagesIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagesIndicator.swift; sourceTree = "<group>"; };
+		E44FF23126935C0300327252 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		E44FF23426935F8800327252 /* IssueListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListViewModel.swift; sourceTree = "<group>"; };
+		E44FF23626935F9600327252 /* IssueListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueListView.swift; sourceTree = "<group>"; };
+		E44FF2382693621C00327252 /* IssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueView.swift; sourceTree = "<group>"; };
 		E49915BB268DEFCF005544A2 /* SwiftHubApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftHubApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49915BE268DEFCF005544A2 /* SwiftHubAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftHubAppApp.swift; sourceTree = "<group>"; };
 		E49915C2268DEFD1005544A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +98,7 @@
 		E499160F268E9ED4005544A2 /* LanguagePillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguagePillView.swift; sourceTree = "<group>"; };
 		E4991612268F512A005544A2 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 		E4991614268F5136005544A2 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
+		E4F385392698A9FA00E13C27 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		E4F567D3268FD5EF002FEC6E /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		E4F567D526908A04002FEC6E /* TextLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextLinkView.swift; sourceTree = "<group>"; };
 		E4F567D726908B94002FEC6E /* NumericInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericInfoView.swift; sourceTree = "<group>"; };
@@ -126,6 +136,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E44FF23326935F7600327252 /* IssueList */ = {
+			isa = PBXGroup;
+			children = (
+				E44FF23626935F9600327252 /* IssueListView.swift */,
+				E44FF23426935F8800327252 /* IssueListViewModel.swift */,
+			);
+			path = IssueList;
+			sourceTree = "<group>";
+		};
 		E49915B2268DEFCF005544A2 = {
 			isa = PBXGroup;
 			children = (
@@ -150,10 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				E4991607268E19DE005544A2 /* Modules */,
+				E49915EA268DF034005544A2 /* Models */,
 				E49915FE268DF245005544A2 /* Extensions */,
 				E49915FB268DF18B005544A2 /* Views */,
 				E49915E9268DF02B005544A2 /* API */,
-				E49915EA268DF034005544A2 /* Models */,
 				E49915BE268DEFCF005544A2 /* SwiftHubAppApp.swift */,
 				E49915C2268DEFD1005544A2 /* Assets.xcassets */,
 				E49915C7268DEFD1005544A2 /* Info.plist */,
@@ -207,6 +226,7 @@
 				E49915F3268DF0E2005544A2 /* User.swift */,
 				E49915F7268DF118005544A2 /* Language.swift */,
 				E49915F9268DF12B005544A2 /* MockedData.swift */,
+				E44FF23126935C0300327252 /* Issue.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -221,6 +241,8 @@
 				E4F567D726908B94002FEC6E /* NumericInfoView.swift */,
 				E4F567E52690AF47002FEC6E /* SearchBar.swift */,
 				E42B313C2690DC7D00609459 /* LanguagesIndicator.swift */,
+				E44FF2382693621C00327252 /* IssueView.swift */,
+				E4F385392698A9FA00E13C27 /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +260,7 @@
 		E4991607268E19DE005544A2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E44FF23326935F7600327252 /* IssueList */,
 				E4F567DE2690AA82002FEC6E /* RepositorySearch */,
 				E4F567D926908E55002FEC6E /* RepositoryDetail */,
 				E4991611268F5109005544A2 /* UserDetail */,
@@ -275,8 +298,8 @@
 		E4F567DE2690AA82002FEC6E /* RepositorySearch */ = {
 			isa = PBXGroup;
 			children = (
-				E4F567DF2690AA9B002FEC6E /* RepositorySearchViewModel.swift */,
 				E4F567E12690AAA9002FEC6E /* RepositorySearchView.swift */,
+				E4F567DF2690AA9B002FEC6E /* RepositorySearchViewModel.swift */,
 			);
 			path = RepositorySearch;
 			sourceTree = "<group>";
@@ -418,12 +441,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44FF23726935F9600327252 /* IssueListView.swift in Sources */,
+				E4F3853A2698A9FA00E13C27 /* WebView.swift in Sources */,
 				E49915FD268DF19B005544A2 /* RepositoryView.swift in Sources */,
 				E49915FA268DF12B005544A2 /* MockedData.swift in Sources */,
 				E49915BF268DEFCF005544A2 /* SwiftHubAppApp.swift in Sources */,
 				E4F567D4268FD5EF002FEC6E /* RoundedImage.swift in Sources */,
 				E49915EE268DF055005544A2 /* URLProvider.swift in Sources */,
+				E44FF23526935F8800327252 /* IssueListViewModel.swift in Sources */,
 				E49915F8268DF118005544A2 /* Language.swift in Sources */,
+				E44FF2392693621C00327252 /* IssueView.swift in Sources */,
 				E4F567DD26909458002FEC6E /* Date+Format.swift in Sources */,
 				E4F567E62690AF47002FEC6E /* SearchBar.swift in Sources */,
 				E499160C268E1A96005544A2 /* RepositoryListViewModel.swift in Sources */,
@@ -433,6 +460,7 @@
 				E4991615268F5136005544A2 /* UserDetailViewModel.swift in Sources */,
 				E499160A268E1A45005544A2 /* RepositoryListView.swift in Sources */,
 				E4F567E02690AA9B002FEC6E /* RepositorySearchViewModel.swift in Sources */,
+				E44FF23226935C0300327252 /* Issue.swift in Sources */,
 				E4F567E22690AAA9002FEC6E /* RepositorySearchView.swift in Sources */,
 				E49915EC268DF047005544A2 /* Requester.swift in Sources */,
 				E49915F2268DF0D9005544A2 /* SearchResult.swift in Sources */,
