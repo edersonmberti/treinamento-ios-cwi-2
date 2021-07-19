@@ -1,0 +1,212 @@
+{
+   "exercicios": [
+       {
+        "categoria": "Musculação",
+        "descricao": "Exercícios para fortalecer seus grupos musculares.",
+        "exercicios": [
+            {
+                "id": 1,
+                "nome": "Halteres",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/007-dumbbell.png",
+                "opcoes": [
+                    "Iniciante (9 repetições)",
+                    "Intermediário (12 repetições)",
+                    "Avançado (15 repetições)"
+                ]
+            },
+            {
+                "id": 2,
+                "nome": "Dumbbell Costas",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/001-dumbbell.png",
+                "opcoes": [
+                    "Iniciante (15 repetições)",
+                    "Intermediário (25 repetições)",
+                    "Avançado (40 repetições)"
+                ]
+            },
+            {
+                "id": 3,
+                "nome": "Kettlebell",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/020-kettlebell.png",
+                "opcoes": [
+                    "Iniciante (12 repetições)",
+                    "Intermediário (24 repetições)",
+                    "Avançado (40 repetições)"
+                ]
+            },
+            {
+                "id": 4,
+                "nome": "Pull up bar",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/015-pull%20up%20bar.png",
+                "opcoes": [
+                    "Iniciante (8 repetições)",
+                    "Intermediário (16 repetições)",
+                    "Avançado (30 repetições)"
+                ]
+            },
+            {
+                "id": 5,
+                "nome": "Remada",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/027-rowing%20machine.png",
+                "opcoes": [
+                    "Iniciante (12 repetições)",
+                    "Intermediário (20 repetições)",
+                    "Avançado (26 repetições)"
+                ]
+            },
+            {
+                "id": 6,
+                "nome": "Tríceps banco",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/002-cardio.png",
+                "opcoes": [
+                    "Iniciante (10 minutos)",
+                    "Intermediário (20 minutos)",
+                    "Avançado (30 minutos)"
+                ]
+            }
+        ]
+    },
+    {
+        "categoria": "Aeróbicos",
+        "descricao": "Exercícios para queimar calorias e trabalhar com todo o corpo.",
+        "exercicios": [
+            {
+                "id": 7,
+                "nome": "Pilates",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/009-workout.png",
+                "opcoes": [
+                    "Iniciante (10 minutos)",
+                    "Intermediário (15 minutos)",
+                    "Avançado (20 minutos)"
+                ]
+            },
+            {
+                "id": 8,
+                "nome": "Corridinha",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/011-workout.png",
+                "opcoes": [
+                    "Iniciante (2 minutos)",
+                    "Intermediário (4 minutos)",
+                    "Avançado (6 minutos)"
+                ]
+            },
+            {
+                "id": 9,
+                "nome": "Bicicleta",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/014-workout%20machine.png",
+                "opcoes": [
+                    "Iniciante (15 minutos)",
+                    "Intermediário (30 minutos)",
+                    "Avançado (1 hora)"
+                ]
+            },
+            {
+                "id": 10,
+                "nome": "Polichipulo",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/017-workout.png",
+                "opcoes": [
+                    "Iniciante (50 repetições)",
+                    "Intermediário (100 repetições)",
+                    "Avançado (200 repetições)"
+                ]
+            },
+            {
+                "id": 11,
+                "nome": "Polichinelo",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/018-workout.png",
+                "opcoes": [
+                    "Iniciante (10 repetições)",
+                    "Intermediário (15 repetições)",
+                    "Avançado (20 repetições)"
+                ]
+            },
+            {
+                "id": 12,
+                "nome": "Pular Corda",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/019-jumping%20rope.png",
+                "opcoes": [
+                    "Iniciante (40 repetições)",
+                    "Intermediário (80 repetições)",
+                    "Avançado (160 - 400 repetições)"
+                ]
+            },
+            {
+                "id": 13,
+                "nome": "Ajoelhamento",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/021-lunges.png",
+                "opcoes": [
+                    "Iniciante (20 repetições)",
+                    "Intermediário (30 repetições)",
+                    "Avançado (50 repetições)"
+                ]
+            },
+            {
+                "id": 14,
+                "nome": "Escalador",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/022-workout.png",
+                "opcoes": [
+                    "Iniciante (10 repetições)",
+                    "Intermediário (15 repetições)",
+                    "Avançado (25 repetições)"
+                ]
+            },
+            {
+                "id": 15,
+                "nome": "Prancha",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/024-plank.png",
+                "opcoes": [
+                    "Iniciante (1 minuto)",
+                    "Intermediário (3 minutos)",
+                    "Avançado (6 minutos)"
+                ]
+            },
+            {
+                "id": 16,
+                "nome": "Flexões",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/025-workout.png",
+                "opcoes": [
+                    "Iniciante (10 repetições)",
+                    "Intermediário (15 repetições)",
+                    "Avançado (20 - 40 repetições)"
+                ]
+            },
+            {
+                "id": 17,
+                "nome": "Corrida",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/028-runner.png",
+                "opcoes": [
+                    "Iniciante 10x(2 minutos)",
+                    "Intermediário 5x(4 minutos)",
+                    "Avançado (20 - 60 minutos)"
+                ]
+            },
+            {
+                "id": 18,
+                "nome": "Boxe",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/029-boxing.png",
+                "opcoes": null
+            },
+            {
+                "id": 19,
+                "nome": "Abdominal",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/030-sit%20up.png",
+                "opcoes": [
+                    "Iniciante (10 repetições)",
+                    "Intermediário (15 repetições)",
+                    "Avançado (25 repetições)"
+                ]
+            },
+            {
+                "id": 20,
+                "nome": "Agachamento",
+                "imagem": "https://raw.githubusercontent.com/hedojunior/exercicios-imagens/main/034-squat.png",
+                "opcoes": [
+                    "Iniciante (20 repetições)",
+                    "Intermediário (30 repetições)",
+                    "Avançado (40 repetições)"
+                ]
+            }
+        ]
+    }
+    ]
+}
